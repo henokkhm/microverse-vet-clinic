@@ -67,3 +67,161 @@ from
 WHERE
     weight_kg BETWEEN 10.4
     AND 17.3;
+
+-- Check current state of table
+select
+    *
+from
+    animals;
+
+BEGIN;
+
+UPDATE
+    animals
+SET
+    species = 'unspecified';
+
+-- Check current state of table
+select
+    *
+from
+    animals;
+
+ROLLBACK;
+
+-- Check current state of table
+select
+    *
+from
+    animals;
+
+-- Check current state of table
+select
+    *
+from
+    animals;
+
+BEGIN;
+
+UPDATE
+    animals
+SET
+    species = 'digimon'
+WHERE
+    name LIKE '%mon';
+
+UPDATE
+    animals
+SET
+    species = 'pokemon'
+WHERE
+    species IS NULL;
+
+-- Check current state of table
+select
+    *
+from
+    animals;
+
+COMMIT;
+
+-- Check current state of table
+select
+    *
+from
+    animals;
+
+-- Check current state of table
+select
+    *
+from
+    animals;
+
+BEGIN;
+
+DELETE FROM
+    animals;
+
+-- Check current state of table
+select
+    *
+from
+    animals;
+
+ROLLBACK;
+
+-- Check current state of table
+select
+    *
+from
+    animals;
+
+-- Check current state of table
+select
+    *
+from
+    animals;
+
+BEGIN;
+
+DELETE FROM
+    animals
+WHERE
+    date_of_birth > '2022-01-01';
+
+SAVEPOINT savepoint_1;
+
+ROLLBACK;
+
+-- Check current state of table
+select
+    *
+from
+    animals;
+
+-- Check current state of table
+select
+    *
+from
+    animals;
+
+BEGIN;
+
+DELETE FROM
+    animals
+WHERE
+    date_of_birth > '2022-01-01';
+
+SAVEPOINT savepoint_1;
+
+UPDATE
+    animals
+SET
+    weight_kg = weight_kg * -1;
+
+-- Check current state of table
+select
+    *
+from
+    animals;
+
+ROLLBACK TO savepoint_1;
+
+-- Check current state of table
+select
+    *
+from
+    animals;
+
+UPDATE
+    animals
+SET
+    weight_kg = weight_kg * -1
+WHERE
+    weight_kg < 0;
+
+-- Check current state of table
+select
+    *
+from
+    animals;
