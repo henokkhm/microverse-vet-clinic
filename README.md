@@ -42,8 +42,6 @@ This project contains the exercise files for the Basic Database Module of the Fu
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
 - **SQL commands to create tables**
 - **SQL queries that retrieve information from tables, including descriptive comments for each query**
 
