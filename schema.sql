@@ -8,3 +8,9 @@ CREATE TABLE animals (
     weight_kg REAL,
     species VARCHAR(100)
 );
+
+CREATE TABLE owners (
+    id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+    full_name VARCHAR(200) NOT NULL,
+    age INT
+);
