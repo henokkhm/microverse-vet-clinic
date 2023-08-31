@@ -187,3 +187,143 @@ SET
     )
 WHERE
     name NOT LIKE '%mon';
+
+UPDATE
+    animals
+SET
+    owner_id = (
+        SELECT
+            id
+        FROM
+            owners
+        WHERE
+            full_name = 'Sam Smith'
+    )
+WHERE
+    name = 'Agumon';
+
+UPDATE
+    animals
+SET
+    owner_id = (
+        SELECT
+            id
+        FROM
+            owners
+        WHERE
+            full_name = 'Jennifer Orwell'
+    )
+WHERE
+    name = 'Gabumon';
+
+UPDATE
+    animals
+SET
+    owner_id = (
+        SELECT
+            id
+        FROM
+            owners
+        WHERE
+            full_name = 'Jennifer Orwell'
+    )
+WHERE
+    name = 'Pikachu';
+
+UPDATE
+    animals
+SET
+    owner_id = (
+        SELECT
+            id
+        FROM
+            owners
+        WHERE
+            full_name = 'Bob'
+    )
+WHERE
+    name = 'Devimon';
+
+UPDATE
+    animals
+SET
+    owner_id = (
+        SELECT
+            id
+        FROM
+            owners
+        WHERE
+            full_name = 'Bob'
+    )
+WHERE
+    name = 'Plantmon';
+
+UPDATE
+    animals
+SET
+    owner_id = (
+        SELECT
+            id
+        FROM
+            owners
+        WHERE
+            full_name = 'Melody Pond'
+    )
+WHERE
+    name = 'Charmander';
+
+UPDATE
+    animals
+SET
+    owner_id = (
+        SELECT
+            id
+        FROM
+            owners
+        WHERE
+            full_name = 'Melody Pond'
+    )
+WHERE
+    name = 'Squirtle';
+
+UPDATE
+    animals
+SET
+    owner_id = (
+        SELECT
+            id
+        FROM
+            owners
+        WHERE
+            full_name = 'Melody Pond'
+    )
+WHERE
+    name = 'Blossom';
+
+UPDATE
+    animals
+SET
+    owner_id = (
+        SELECT
+            id
+        FROM
+            owners
+        WHERE
+            full_name = 'Dean Winchester'
+    )
+WHERE
+    name = 'Angemon';
+
+UPDATE
+    animals
+SET
+    owner_id = (
+        SELECT
+            id
+        FROM
+            owners
+        WHERE
+            full_name = 'Dean Winchester'
+    )
+WHERE
+    name = 'Boarmon';
