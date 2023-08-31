@@ -19,3 +19,16 @@ CREATE TABLE species (
     id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
     name VARCHAR(100) NOT NULL
 );
+
+ALTER TABLE
+    animals DROP COLUMN species;
+
+ALTER TABLE
+    animals
+ADD
+    COLUMN species_id INT CONSTRAINT animal_species REFERENCES species (id);
+
+ALTER TABLE
+    animals
+ADD
+    COLUMN owner_id INT CONSTRAINT animal_owner REFERENCES owners (id);
