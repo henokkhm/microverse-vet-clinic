@@ -32,3 +32,10 @@ ALTER TABLE
     animals
 ADD
     COLUMN owner_id INT CONSTRAINT animal_owner REFERENCES owners (id);
+
+CREATE TABLE vets (
+    id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+    name VARCHAR(100) NOT NULL,
+    age INT,
+    date_of_graduation DATE
+);
