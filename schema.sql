@@ -56,8 +56,17 @@ CREATE TABLE visits (
     FOREIGN KEY (animal_id) REFERENCES animals(id),
     FOREIGN KEY (vet_id) REFERENCES vets(id)
 );
-ALTER TABLE owners ADD COLUMN email VARCHAR(120);
 
-CREATE INDEX index_animalID ON visits(animal_id);
-CREATE INDEX index_vetID ON visits(vet_id);
-CREATE INDEX indx_Email on owners(email);
+ALTER TABLE
+    owners
+ADD
+    COLUMN email VARCHAR(120);
+
+-- Create an index on the animal_id column in visits table
+CREATE INDEX visits_animal_id_idx ON visits(animal_id);
+
+-- Create an index on the vet_id column in visits table
+CREATE INDEX visits_vet_id_idx ON visits(vet_id);
+
+-- Create an index on the email column in owners table
+CREATE INDEX owners_email_idx on owners(email);
