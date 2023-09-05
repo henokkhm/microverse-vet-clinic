@@ -10,6 +10,7 @@
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
+  - [Schmea Diagram](#schmea-diagram)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -38,6 +39,13 @@ This project contains the exercise files for the Basic Database Module of the Fu
   </ul>
 </details>
 
+<details>
+<summary>Diagraming Application</summary>
+  <ul>
+    <li><a href="https://www.lucidchart.com/pages/landing">Lucid Chart</a></li>
+  </ul>
+</details>
+
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
@@ -46,6 +54,18 @@ This project contains the exercise files for the Basic Database Module of the Fu
 - **SQL queries that retrieve information from tables, including descriptive comments for each query**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<!-- SCHEMA DIAGRAM -->
+## Schmea Diagram
+
+The *schema diagram* for this database can be found [here](https://lucid.app/lucidchart/94be09e5-3041-4e8a-a3b3-fbfd82bbbfb3/edit?viewport_loc=-234%2C89%2C3323%2C1587%2C0_0&invitationId=inv_aea13f68-81c2-46ab-8287-39b02357897f). 
+
+For reference, here is a screenshot of the schema diagram.
+![Schema Diagram for Vet Clinic Database](vet_clinic_scema_diagram.jpeg)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 
 <!-- GETTING STARTED -->
